@@ -66,10 +66,10 @@ type = 'hunyuan-video'
 # Can load Hunyuan Video entirely from the ckpt path set up for the official inference scripts.
 #ckpt_path = '/home/anon/HunyuanVideo/ckpts'
 # Or you can load it by pointing to all the ComfyUI files.
-transformer_path = '/data2/imagegen_models/hunyuan_video_comfyui/hunyuan_video_720_cfgdistill_fp8_e4m3fn.safetensors'
-vae_path = '/data2/imagegen_models/hunyuan_video_comfyui/hunyuan_video_vae_bf16.safetensors'
-llm_path = '/data2/imagegen_models/hunyuan_video_comfyui/llava-llama-3-8b-text-encoder-tokenizer'
-clip_path = '/data2/imagegen_models/hunyuan_video_comfyui/clip-vit-large-patch14'
+transformer_path = 'basemodels/hunyuan_video_FastVideo_720_fp8_e4m3fn.safetensors'
+vae_path = 'basemodels/hunyuan_video_vae_bf16.safetensors'
+llm_path = 'basemodels/llava-llama-3-8b-v1_1-transformers'
+clip_path = 'basemodels/clip-vit-large-patch14'
 # Base dtype used for all models.
 dtype = 'bfloat16'
 # Hunyuan Video supports fp8 for the transformer when training LoRA.
